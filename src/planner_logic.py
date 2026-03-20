@@ -30,7 +30,7 @@ def create_lesson(day, time, subject):
     # Готуємо дані: перетворюємо на рядок та чистимо пробіли
     d = str(day).strip().lower()
     t = str(time).strip().replace(".", ":")
-    s = str(subject).strip()
+    s = str(subject).strip().capitalize()
 
     # Перетворюємо день у повну назву
     full_day = days_map.get(d, "Не вказано")
